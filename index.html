@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Horóscopo </title>
+</head>
+
+<body>
+
+    <h1> Signos </h1>
+
+    <div class="container">
+        <input type="text" id="signos">
+        <button onclick="escolhaSigno()"> Buscar </button>
+        <div id="frase"></div>
+    </div>
+
+    <div id="img">
+        <img src="https://content-media.astrologialuzesombra.com.br/wp-content/uploads/2022/06/17195931/signos-astrologia-luz-e-sombra.png" id="imagem">
+    </div>
+
+    <footer></footer>
+
+    <script>
+
+        function escolhaSigno() {
+            var img = document.getElementById('imagem')
+            var text
+            var signo = document.getElementById('signos').value;
+
+            switch (signo) {
+
+                case "Áries":
+                    text = "Os mais estressadinho do zodíaco, os arianos são impulsivos, determinados e nada pacientes."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/aries.png'
+                break
+
+                case "Touro":
+                    text = "Tão calmos e apegados, mas pisa no calo deles para ver o que acontece. Não vamos esquecer da fome sem fim que eles têm!"
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/touro.png'
+                break
+
+                case "Gêmeos":
+                    text = "Donos da razão e falantes, com essa junção não dá nem para tentar discutir com eles. "
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/gemeos.png'
+                break
+
+                default:
+                    text = "Insira um signo existente."
+
+                
+            }
+
+            document.getElementById('frase').innerHTML = text
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
