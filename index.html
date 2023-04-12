@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Horóscopo </title>
+</head>
+
+<body>
+
+    <h1> Signos </h1>
+
+    <div class="container">
+        <input type="text" id="signos">
+        <button onclick="escolhaSigno()"> Buscar </button>
+        <div id="frase"> Pesquise o seu signo</div>
+    </div>
+
+    <div id="img">
+        <img src="https://www.viastral.com.br/assets/images/SVG/mapa-astral-planetas-nas-casas.svg" id="imagem">
+    </div>
+
+    <footer>
+        Desenvolvido por Eduardo | Github: <a href="">Edufag</a>
+    </footer>
+
+    <script>
+
+        function escolhaSigno() {
+            var img = document.getElementById('imagem')
+            var text
+            var signo = document.getElementById('signos').value;
+
+            switch (signo) {
+
+                case "Áries":
+                    text = "Pessoas que nasceram com o Sol em Áries são chamadas de arianas, já que além de iluminar, um dos atributos do sol é dar nome às coisas. O Sol simboliza a consciência, o Eu, o brilho pessoal, etc. Áries é o primeiro signo do zodíaco, é a semente, o primeiro passo, o início. O impulso primitivo."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/aries.png'
+                break
+
+                case "Touro":
+                    text = "Se tivéssemos que escolher uma única expressão que caracterizasse as pessoas com o Sol em Touro, talvez fosse: Eu tenho. Pessoas de Touro são de natureza sensorial, e algumas vivem em função de seus sentidos. Podemos dizer que se alimenta do prazer que sente quando saboreia os alimentos, quando recebe o beijo de uma criança, ouve uma bela música, sente o perfume de uma flor, ou o calor de um corpo receptivo. Para você a realidade física das coisas e o valor dos bens materiais são inquestionáveis, embora admita a possibilidade de outras realidades."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/touro.png'
+                break
+
+                case "Gêmeos":
+                    text = "O Sol simboliza a luz, a vida e a consciência. O signo de Gêmeos está associado ao intelecto, à forma de pensar e de se comunicar. Nascer quando o Sol estava em Gêmeos, é uma indicação de ser uma pessoa flexível e mutável, que têm capacidade natural de aprendizado e de adaptação. Novas situações são encaradas de forma prática e objetiva."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/gemeos.png'
+                break
+
+                case "Câncer":
+                    text = "Ter o sol em Câncer em seu mapa natal, é indicação de forte apego às pessoas e às coisas, principalmente às coisas que remetem a lembranças, que por sua vez remetem a emoções. Não é incomum encontrar cancerianos adultos que guardaram o papel do bombom que foi presente da primeira namorada de infância."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/cancer.png'
+                break
+
+                case "Leão":
+                    text = "A pessoa que nasce com o Sol em Leão tem necessidade de encontrar um significado para sua vida e para conseguir isso, às vezes, se coloca no papel de provedor magnânimo, de doador desinteressado, de criador e protetor dos fracos, etc. Precisa ficar atento para que sua visão objetiva não seja ofuscada pelo brilho de seu ego, o que poderia levá-lo à perda de parâmetros de justiça. Pode assumir uma postura de déspota benevolente e generoso, aquele tipo que gosta de dar conselhos não solicitados e completar com a frase: 'Eu sei o que é melhor para você'. O pior é que pode se ressentir seriamente se não lhe dão ouvidos. Você costuma ficar indignado diante da mesquinhez, da maldade, do ciúme insano, das baixezas comuns além dos muros do castelo. E fica frustrado ao perceber que nem sempre o bem e o mal são facilmente identificáveis e que há uma enorme variação de matizes de cinza entre o branco e o preto."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/leao.png'
+                break
+
+                case "Virgem":
+                    text = "Virgem é um signo de pessoas curiosas, que gostam de estudar, de fazer pesquisas, e que têm facilidade para trabalhos que exijam senso analítico. Normalmente, são cuidadosas e prestam atenção nos detalhes, embora, às vezes, tenham grande dificuldade em formar uma visão geral das coisas. Às vezes, sua vontade de explorar novos caminhos fica apenas no plano intelectual, já que nem sempre se propõem a sujar as mãos."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/virgem.png'
+                break
+
+                case "Libra":
+                    text = "Expressões como diplomacia e equilíbrio, mas também indecisão e inconstância são comuns quando nos referimos a pessoas que têm o Sol em Libra. As pessoas librianas são conhecidas por pensar em termos relativos, em vez de em termos absolutos."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/libra.png'
+                break
+
+                case "Escorpião":
+                    text = "Assim como Câncer, Escorpião é um signo de água, mas os dois reagem de formas muito diferentes. Por exemplo, se você magoar uma pessoa de Câncer, ela vai reagir de forma direta, vai acusar o golpe, manifestando seus sentimentos, seja por palavras, seja por uma expressão tristonha. Já Escorpião é um signo de água de modo fixo, que pode guardar mágoas por um tempo indefinido, e que só costuma revelar seus sentimentos se isso lhe for vantajoso, e, às vezes, apenas quando surge a oportunidade de vingança."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/escorpiao.png'
+                break
+
+                case "Sagitário":
+                    text = "Quem nasceu quando o Sol estava em Sagitário, provavelmente é o tipo cidadão do mundo, que ama a liberdade e estar sempre em movimento. Sol neste signo também é indicação de que você é curioso, gosta de aprender e sente verdadeiro pavor de rotina e falta de perspectiva. Geralmente é alegre, muito divertido, ótimo companheiro de viagem e de riso, mas um tanto inquieto. Como é descontraído e está sempre aberto ao novo, faz amizade em todas as camadas sociais, e se dá muito bem com ambos os sexos."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/sagitario.png'
+                break
+
+                case "Capricórnio":
+                    text = "Uma pessoa com Sol em Capricórnio normalmente tem visão realista da vida, às vezes, excessivamente, com tendência a achar que as coisas são sempre mais difíceis do que realmente são. Para se sentir segura e satisfazer seu forte senso de sociedade, busca uma abordagem pragmática fundamentada naquilo que pode ser visto e experimentado. Ela está mais preocupada com coisas que valem a pena."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/capricornio.png'
+                break
+
+                case "Aquário":
+                    text = 'Nascer quando o Sol estava em Aquário significa que, além de ser chamado de aquariano, tem tendência a adotar uma postura de reformador messiânico, do tipo que cita frases como: "seja fiel a você mesmo" ou "levante a cabeça acima da multidão", etc. O Aquariano acha que todos são iguais, e todo aquariano se acha o fundador da sociedade dos iguais. Originais, irreverentes e libertários são alguns adjetivos associados às pessoas de Aquário.'
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/aquario.png'
+                break
+
+                case "Peixes":
+                    text = "Peixes é o décimo segundo e último signo do zodíaco, e poderíamos dizer que, simbolicamente, condensa em si um pouco da experiência de todos os signos. Alguns criticam a aparente irresponsabilidade dos piscianos, que pode ser percebida em seu desrespeito pelos horários, em seus atrasos recorrentes e em sua dificuldade em cumprir compromissos. De fato, alguns parecem desenvolver uma espécie de alergia a coisas como listas de compras, mapas, anotações e até relógios. Eles preferem sentir o caminho sendo feito sob seus pés, atravessando a vida sem qualquer plano estabelecido."
+
+                    img.src = 'https://www.viastral.com.br/assets/images/signos/peixes.png'
+                break
+
+                default:
+                    text = "Insira um signo existente."
+
+                
+            }
+
+            document.getElementById('frase').innerHTML = text
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
